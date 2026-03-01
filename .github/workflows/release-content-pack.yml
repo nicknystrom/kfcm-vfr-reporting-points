@@ -21,18 +21,18 @@ jobs:
           EFFECTIVE_DATE=$(date -u '+%Y%m%dT%H:%M:%S')
           jq --arg v "$VERSION" --arg d "$EFFECTIVE_DATE" \
             '.version = ($v | tonumber) | .effectiveDate = $d' \
-            content-pack/manifest.json > manifest.tmp && mv manifest.tmp content-pack/manifest.json
+            foreflight-content-pack/manifest.json > manifest.tmp && mv manifest.tmp foreflight-content-pack/manifest.json
 
       - name: Commit manifest
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add content-pack/manifest.json
+          git add foreflight-content-pack/manifest.json
           git commit -m "Release content pack v$VERSION"
           git push
 
       - name: Zip content pack
-        run: cd content-pack && zip -r ../kfcm-vfr-reporting-points.zip .
+        run: cd foreflight-content-pack && zip -r ../kfcm-vfr-reporting-points.zip .
 
       - name: Upload release assets
         run: gh release upload "$GITHUB_REF_NAME" kfcm-vfr-reporting-points.zip garmin-gtn/user.wpt --clobber
