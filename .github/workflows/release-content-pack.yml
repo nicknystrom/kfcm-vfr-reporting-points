@@ -34,9 +34,9 @@ jobs:
           git push origin main
 
       - name: Zip content pack
-        run: cd foreflight-content-pack && zip -r ../kfcm-vfr-reporting-points.zip .
+        run: cd foreflight-content-pack && zip -r ../foreflight-kfcm-vfr-waypoints.zip .
 
       - name: Upload release assets
-        run: gh release upload "$GITHUB_REF_NAME" kfcm-vfr-reporting-points.zip garmin-gtn/user.wpt --clobber
+        run: gh release upload "$GITHUB_REF_NAME" foreflight-kfcm-vfr-waypoints.zip garmin-gtn/user.wpt --clobber
         env:
           GH_TOKEN: ${{ github.token }}
