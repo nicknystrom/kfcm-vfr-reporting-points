@@ -1,6 +1,7 @@
 {
   "name": "KFCM VFR Reporting Points",
   "abbreviation": "KFCM",
-  "version": 1.0,
-  "organizationName": "KFCM VFR Reporting Points"
+  "version": 26.03,
+  "organizationName": "KFCM VFR Reporting Points",
+  "effectiveDate": "20260301T18:26:10"
 }
