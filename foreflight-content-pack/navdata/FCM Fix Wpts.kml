@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
   <name>KFCM Feeder and Inside Fixes</name>
   <description>VFR Feeder Fixes and Inside Points for Flying Cloud Airport (KFCM)</description>
 
-  <!-- Styles -->
+  
   <Style id="feederFix">
     <IconStyle>
       <color>ffffff00</color>
@@ -33,53 +33,53 @@
     <LineStyle><color>ffffff00</color><width>2</width></LineStyle>
   </Style>
 
-  <!-- ========== Feeder Fixes ========== -->
+  
   <Folder>
     <name>Feeder Fixes</name>
 
     <Placemark>
-      <name>Island</name>
+      <name>ISLAND</name>
       <description>NW - 7.5NM NW KFCM - At or below 2500' MSL</description>
       <styleUrl>#feederFix</styleUrl>
       <Point><coordinates>-93.568889,44.927778,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
-      <name>High School</name>
+      <name>HIGHSC</name>
       <description>NW - 8NM W KFCM</description>
       <styleUrl>#feederFix</styleUrl>
       <Point><coordinates>-93.643889,44.857778,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
-      <name>494/394</name>
+      <name>494394</name>
       <description>N - 8.5NM N KFCM - At or below 2500' MSL</description>
       <styleUrl>#feederFix</styleUrl>
       <Point><coordinates>-93.459722,44.970833,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
-      <name>Soccer Dome</name>
+      <name>SOCCER</name>
       <description>SE - 7NM SE KFCM - At or below 2300' MSL</description>
       <styleUrl>#feederFix</styleUrl>
       <Point><coordinates>-93.325000,44.739444,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
-      <name>Pit</name>
+      <name>PIT</name>
       <description>SW - 9NM SW KFCM - At or below 2500' MSL</description>
       <styleUrl>#feederFix</styleUrl>
       <Point><coordinates>-93.650833,44.756667,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
-      <name>Prior Lake</name>
+      <name>PRIORL</name>
       <description>SW - 6.5NM S KFCM</description>
       <styleUrl>#feederFix</styleUrl>
       <Point><coordinates>-93.435833,44.719167,0</coordinates></Point>
     </Placemark>
 
-    <!-- Route lines: Feeder Fix → Inside Fix -->
+    
     <Placemark>
       <name>Island → Chanhassen</name>
       <styleUrl>#routeLine</styleUrl>
@@ -147,33 +147,33 @@
     </Placemark>
   </Folder>
 
-  <!-- ========== Inside Fixes ========== -->
+  
   <Folder>
     <name>Inside Fixes</name>
 
     <Placemark>
-      <name>Chanhassen</name>
+      <name>CHANHA</name>
       <description>NW - 2.6NM WNW KFCM</description>
       <styleUrl>#insidePoint</styleUrl>
       <Point><coordinates>-93.531944,44.861111,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
-      <name>Interchange</name>
+      <name>INTERC</name>
       <description>N - 2.5NM NNE KFCM (manually verified position)</description>
       <styleUrl>#insidePoint</styleUrl>
       <Point><coordinates>-93.429690,44.864700,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
-      <name>Bridge</name>
+      <name>BRIDGE</name>
       <description>SE - 3NM SE KFCM</description>
       <styleUrl>#insidePoint</styleUrl>
       <Point><coordinates>-93.401944,44.793611,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
-      <name>Elevator</name>
+      <name>ELEVAT</name>
       <description>SW - 3.5NM SW KFCM</description>
       <styleUrl>#insidePoint</styleUrl>
       <Point><coordinates>-93.535833,44.796111,0</coordinates></Point>
