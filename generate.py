@@ -91,10 +91,10 @@ def main():
     os.makedirs(GTN_DIR, exist_ok=True)
 
     # Copy KML to content pack layers
-    shutil.copy2(KML_FILE, CONTENT_PACK_LAYERS)
+    shutil.copy2(KML_FILE, os.path.join(CONTENT_PACK_LAYERS, "FCM Fix Map.kml"))
 
-    # Write ForeFlight waypoints.csv
-    with open(os.path.join(CONTENT_PACK_NAVDATA, "waypoints.csv"), "w") as f:
+    # Write ForeFlight waypoints CSV
+    with open(os.path.join(CONTENT_PACK_NAVDATA, "FCM Fix Wpts.csv"), "w") as f:
         for wp in waypoints:
             desc = foreflight_description(wp)
             f.write(f"{wp['code']},{desc},{wp['lat']},{wp['lon']}\n")
@@ -106,9 +106,9 @@ def main():
             f.write(f"{wp['code']},{comment},{wp['lat']},{wp['lon']}\n")
 
     print(f"Generated {len(waypoints)} waypoints")
-    print(f"  {CONTENT_PACK_NAVDATA}/waypoints.csv")
+    print(f"  {CONTENT_PACK_NAVDATA}/FCM Fix Wpts.csv")
     print(f"  {GTN_DIR}/user.wpt")
-    print(f"  Copied KML to {CONTENT_PACK_LAYERS}/")
+    print(f"  {CONTENT_PACK_LAYERS}/FCM Fix Map.kml")
 
 
 if __name__ == "__main__":
