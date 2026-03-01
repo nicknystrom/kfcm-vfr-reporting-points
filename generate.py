@@ -107,7 +107,7 @@ def main():
     os.makedirs(GTN_DIR, exist_ok=True)
 
     # Write transformed KML to content pack navdata
-    kml_dest = os.path.join(CONTENT_PACK_NAVDATA, "FCM Fix Wpts.kml")
+    kml_dest = os.path.join(CONTENT_PACK_NAVDATA, "KFCM VFR Waypoints.kml")
     write_foreflight_kml(KML_FILE, kml_dest, waypoints)
 
     # Write Garmin GTN user.wpt
