@@ -16,6 +16,15 @@ FCM now operates two tower frequencies:
 - The tower monitors both frequencies at all times. If arriving from the north, contact on **125.2** regardless of which runway is active.
 - The ATIS will include the new frequency and arrival instructions.
 
+## Ground Procedures
+
+Request taxi as normal. Before arriving at the runway, expect either a "Monitor" or "Contact" instruction from ATC.
+- No reply required on ground.
+- **Monitor tower**: switch to the given tower frequency and expect tower to call you.
+- **Contact tower**: switch to the given tower frequency and announce.
+- Runway crossings are expected to be done on tower.
+- **Never** enter a runway for any reason without explicit clearance.
+
 ## Departure Procedures
 
 All VFR departures leaving FCM Class D airspace:
